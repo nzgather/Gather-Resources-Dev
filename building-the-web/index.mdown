@@ -1,0 +1,9 @@
+# Building the Web Documentation
+
+These are the Building the Web Docs. It's a collection of knowledge and patterns collected by Gather workshop developers which they have learnt while building a large number of websites over the last few years.
+
+You will find documentation about how they use Wordpress, which functions they use for what, which plugins they use to achieve this or that. You will also find documentation about their front-end development, including a pattern library for common elements, as well as some information on how to write efficient HTML, CSS and Javascript (using jQuery.)
+
+This workshop contains material from the following contributors:
+
+* Ludwig Wendzich
