@@ -4,7 +4,7 @@ This is the documentation for the workshop: "Building the Web", written by Ludwi
 
 ## What you will need
 
-* __[Presentation](HTML-CSS-Workshop)__ We've put together a presentation for this workshop, available [here](HTML-CSS-Workshop)
+* __[Presentation](HTML-CSS-Workshop)__ We've put together a presentation for this workshop, available [here](http://darren131.github.io/HTML-CSS-Gather-Workshop/)
 * __[Printouts](HTML-CSS-Workshop/assets/printable.pdf)__ This workshop includes a number of activities which require printouts. We've collated these in one pdf [here](HTML-CSS-Workshop/assets/printable.pdf)
 
 ## Foundations of the Web
