@@ -8,8 +8,7 @@
 
 
     var _curPath = document.location.pathname.split('/'),
-        _curFile = _curPath[_curPath.length - 1];
-
+        _curFile = _curPath[_curPath.length - 1].replace(/%20/g, ' ');
 
     var sidebar = (function () {
 
