@@ -89,7 +89,7 @@ Remember you can combine conditions:
 
 ### Do I need to group my styles?
 
-When people started building adaptive website, they group their styles. All the `320px` (read: iPhone) styles were in one media query. All their `768px` styles (read: iPad Portrait) were in another block. This made sense because they were siloing the different designs for various devices.
+When people started building adaptive website, they grouped their styles. All the `320px` (read: iPhone) styles were in one media query. All their `768px` styles (read: iPad Portrait) were in another block. This made sense because they were siloing the different designs for various devices.
 
 “Responsive web design” throws all that out the window. We just don't know what viewport size will be requesting our website, so we design for all of them, not a few. That means it makes much more sense to use media queries as they are needed, inline with your other CSS. You’re changing the `#menu` at a certain width because your layout broke, then keep that change in context. Right after your `#menu` declaration.
 

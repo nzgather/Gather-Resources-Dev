@@ -3,7 +3,7 @@
 There are a number of patterns recorded here to solve common CSS problems. You may not always find the pattern you need, but these are tried and tested.
 
 ## Clearfix
-When we float elements within a container that is itself not floated, then it will collapse as we have removed all it's children from the "flow", and thus there's nothing left inside the container to pull it all the way down.
+When we float elements within a container that is itself not floated, then it will collapse as we have removed all its children from the "flow", and thus there's nothing left inside the container to pull it all the way down.
 
 The way to fix this is with a clear fix, so named because we used the `clear` property in CSS to add "content" to the container element that isn't float, but clears all the floated elements, pulling the container down as it clears.
 
@@ -35,7 +35,7 @@ When building websites with media-queries, often we find that internal static el
 	img, video, embed, object { max-width: 100%; }
 
 ## Centering layout
-Sometimes we want to center our entire layout, or center a container element within it's context (eg. navigation items in a nav-bar).
+Sometimes we want to center our entire layout, or center a container element within its context (eg. navigation items in a nav-bar).
 
 To do this our containing element must have a defined width (or min-width or max-width) and must not be floated.
 
