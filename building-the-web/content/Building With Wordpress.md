@@ -6,7 +6,7 @@ This is the documentation for the workshop: "Building with Wordpress", written b
 
 ### Software
 * __Text Editor__ Most files you will work with will be some kind of text file, and thus finding the right Text Editor is an important part of the process. Here are some popular ones:
-	* [Sublime Text 2](http://www.sublimetext.com/) (Free, Open Source)
+	* [Sublime Text 2](http://www.sublimetext.com/) (USD $70)
 	* [Text Wrangler](http://www.barebones.com/products/textwrangler/) (Free)
 	* [Textmate](http://macromates.com/) ($50)
 	* [Coda](http://www.panic.com/coda/) ($75, includes FTP, Documentation, MySQL Editor and more)
@@ -25,7 +25,7 @@ This is the documentation for the workshop: "Building with Wordpress", written b
 * __Content Management System__ Updating a website manually is difficult. CMSes make this easier, that's what we will be learning to implement. We're going to be using Wordpress, the web's most popular CMS:
 	* [Wordpress](http://wordpress.org/)
 	
-* __Graphic Editor__ You will probable need a graphical editor. Adobe is still where it's at.
+* __Graphic Editor__ You will probably need a graphical editor. Adobe is still where it's at.
 	* Photoshop
 	* Illustrator
 	
@@ -100,7 +100,7 @@ The way we organise our information in Wordpress and setup our Custom Post Types
 
 >__Pro-tip__
 
->Write our the URLs you want your website to have. How you want the different pieces of content to be accessed and relate to each other. Then start creating custom post types and taxonomies on paper before jumping into Wordpress.
+>Write out the URLs you want your website to have. How you want the different pieces of content to be accessed and relate to each other. Then start creating custom post types and taxonomies on paper before jumping into Wordpress.
 
 ## Themes
 
@@ -118,7 +118,7 @@ There are a couple of default files almost every theme will need
 
 Then we get specific:
 
-* `front-page.php` — The homepage template
+* `front-page.php` — The homepage template.
 * `single-post.php` or `single-custom-post-type-slug.php` — The template used to render that post type.
 * `page.php` or `page-slug.php` — The template used to render all pages, or a specific page, e.g. `page-about.php`.
 
@@ -134,7 +134,7 @@ Read more about [The Loop in the Codex](http://codex.wordpress.org/The_Loop)
 
 ### Sidestepping the loop
 
-It may be necessary to pull in posts onto a page which Wordpress doesn't automatically thinks belongs there. Maybe it's a "Recent Posts" in a sidebar, or we're doing "Related Posts".
+It may be necessary to pull in posts onto a page which Wordpress doesn't automatically think belongs there. Maybe it's a "Recent Posts" in a sidebar, or we're doing "Related Posts".
 
 To do that, we can query [get_posts](http://codex.wordpress.org/Template_Tags/get_posts) and run through the array with our own PHP foreach loop. In order to retain default functionality that rely on globals (like `the_title()` we need to override the global `$post` for each loop and then reset it once we're done.)
 
@@ -184,7 +184,7 @@ In Wordpress we make use of the `Appearance > Menus` feature to create most of o
 * __Main Menu (L1s):__ This should include the *entire* website IA. Use the `depth` parameter of `wp_nav_menu` to limit the output of this menu. This means we can re-use this menu object in other place, eg. a site map, a large L1+L2 menu in the footer etc.
 * __Unique Menus:__ These include special "Supporter" logos in the footer.
 
-_Note: Wordpress Menu's are used for the organisation of content; unless that content is literally a list of links, then it's better to create a Custom Post Type and use those within the Menu._
+_Note: Wordpress Menus are used for the organisation of content; unless that content is literally a list of links, then it's better to create a Custom Post Type and use those within the Menu._
 
 There are other types of navigational items found on the page, these include:
 
@@ -242,7 +242,7 @@ These are usually grouped when styling:
 
 ### Sub navs in Wordpress
 
-Menus are used to create menus, but don't create real hierarchy of posts. When hierarchy is require, we need to use the "pages" functionality of Wordpress. This can be added to any **custom post type** and basically means, _"treat this post-type as heirarchical like regular WP pages and not chronological like regular WP posts"_.
+Menus are used to create menus, but don't create real hierarchy of posts. When hierarchy is required, we need to use the "pages" functionality of Wordpress. This can be added to any **custom post type** and basically means, _"treat this post-type as heirarchical like regular WP pages and not chronological like regular WP posts"_.
 
 Once our pages (or custom post types with pages functionality enabled) are created, and our child pages are given the correct pages, then we can call the sub nav using `wp_list_pages()`.
 
@@ -273,7 +273,7 @@ The following style hooks are provided by Wordpress to style `wp_list_pages()`
 
 ## Custom Post Types
 
-We've already talked about Post, Pages and how they relate to Custom Post Types. There are a number of patterns recorded here to allow us to create re-usable content formats using Custom Post Types in Wordpress and relate them to each other. You may not always find the pattern you need, but these are tried and tested.
+We've already talked about Posts, Pages and how they relate to Custom Post Types. There are a number of patterns recorded here to allow us to create re-usable content formats using Custom Post Types in Wordpress and relate them to each other. You may not always find the pattern you need, but these are tried and tested.
 
 ### When should I use Custom Post Types?
 Generally, whenever you feel like you start using HTML inside the Visual Editor in Wordpress that can easily be broken by someone using the Visual Editor without being proficient in writing HTML/CSS then you should be creating a custom post type. In other news, when you are creating a page with special layout, custom post types comes into play.
@@ -311,7 +311,7 @@ Setting up custom post types, taxonomies and custom field groups are explained [
 #### Using Related Posts
 Every time we related posts to one another, we normally want to output these related posts from within our templates. By default, Related Posts will output these posts after `the_content()`, __almost every time we want to turn this off and manually control the output.__ We do this under `Settings > Related Posts`.
 
-An common usage of related custom post types is the sidebar CTA. Once a `cta` custom post type has been created (usually with Types), one can use the following code to pull out related posts.
+A common usage of related custom post types is the sidebar CTA. Once a `cta` custom post type has been created (usually with Types), one can use the following code to pull out related posts.
 
 	$ctas = MRP_get_related_posts( $post->ID, true, true, 'cta' );
 	
@@ -350,4 +350,4 @@ The hardest part about finding help is knowing what to look for. Hopefully these
 * [CSS Tricks](http://css-tricks.com/) — Front-end development techniques
 * [Wordpress Codex](http://codex.wordpress.org/) — Wordpress Documentation
 
-The best way to find what you're looking for on those websites though, is through using a search engineer (read: Google) and looking for results that come from those trusted-domains.
+The best way to find what you're looking for on those websites though, is through using a search engine (read: Google) and looking for results that come from those trusted-domains.
